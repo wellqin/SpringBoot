@@ -5,3 +5,9 @@
 .idea/intellij-javadocs-4.0.1.xml
 .idea/misc.xml
 .idea/vcs.xml
+.idea/compiler.xml
+.idea/encodings.xml
+.idea/jarRepositories.xml
+.idea/libraries/
+src/test/
+target/
