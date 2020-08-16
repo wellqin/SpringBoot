@@ -15,7 +15,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class HelloWorldMainApplication {
     public static void main(String[] args) {
+
         //启动Spring应用，参数一个为HelloWorldMainApplication类，另一个为参数args
+
         SpringApplication.run(HelloWorldMainApplication.class, args);
     }
 }
