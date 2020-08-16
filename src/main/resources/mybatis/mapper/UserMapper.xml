@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.wellqin.mapper.UserMapper">
+<!--去中文官网找的基础配置，同时注意 namespace的绑定-->
+    <select id="getUser" resultType="User">
+        <!--id是UserMapper中的方法名getUser，resultType为User，但是注意要被识别，需要在配置文件中设置别名整合-->
+       select * from user;
+    </select>
+
+    <select id="getDepartment" resultType="Department" parameterType="int">
+       select * from department where id = #{id};
+    </select>
+
+</mapper>
+
